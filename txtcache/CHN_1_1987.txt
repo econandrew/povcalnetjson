@@ -1,0 +1,214 @@
+
+
+**********************************************************************************************
+**                                   Basic Information                                      **
+**********************************************************************************************
+
+----------------- Dataset Information -----------------
+                         Country: China
+                    Country dode: CHN
+                       Data Year: 1987
+                        Coverage: Rural
+             Welfare measurement: Income
+                     Data format: Grouped
+                     Data source: CHN_R1987Y
+                  Data time span: UnDefined
+-------------------------------------------------------
+
+
+----------- Distribution ----------
+   i          P             L    
+-----------------------------------
+   1    0.00940094   0.001941673
+   2    0.03490349   0.009040003
+   3    0.09030903    0.03031273
+   4     0.2820282     0.1353575
+   5     0.5008501     0.3007508
+   6     0.6743674     0.4685998
+   7     0.7908791     0.6062901
+   8      0.909691     0.7821784
+   9     0.9564956     0.8719608
+  10      0.989999     0.9572732
+  11     0.9968997     0.9825196
+  12             1             1
+-----------------------------------
+
+
+**********************************************************************************************
+**                             General Quadratic Lorenz curve                               **
+**********************************************************************************************
+
+--------------- Regression result -------------
+ Ymean (Mean of dependent variable): 0.1086762
+                   SST around ymean: 0.09140272
+         SSE (sum of squared error): 2.161894E-06
+            Mean squared error: MSE: 2.702367E-07
+      Root mean squared error: RMSE: 0.000519843
+                      R-squared: R2: 0.9999763
+-----------------------------------------------
+      Coefficient   Standard error     t-ratio
+-----------------------------------------------
+ A      0.956361       0.006079        157.323
+ B      -1.51649       0.016456       -92.1525
+ C      0.152181       0.011088        13.7245
+-----------------------------------------------
+
+
+
+-------------------------------  Summary -------------------------------
+                                                  Mean: 49.8262
+   overall sum of squared error of fitted lorenz curve: 2.10631E-05
+      SSE of fitted lorenz curve up to headcount index: 3.40766E-06
+        input poverty line Z which is within the range: (16.9135, 135.828)
+                              Validity of lorenz curve: Valid
+                         Normality of poverty estimate: Normal
+------------------------------------------------------------------------
+
+------------------------- Distributional Estimation --------------------
+                                         Gini index(%): 29.4511
+                         median income(or expenditure): 43.4062082125642
+                                             MLD index: 0.145568
+                                 polarization index(%): 24.1624
+                           distribution corrected mean: 9.5105(PPP$)
+            mean income/expenditure of the poorest 50%: 8.09172(PPP$)
+                                       estimate median: 11.7437(PPP$)
+------------------------------------------------------------------------
+
+--------------------------------------- Decile (%) -------------------------------------------
+      3.49661  4.97732  6.15003  7.19031  8.19793  9.25745  10.4783  12.0695  14.6398  23.5428
+----------------------------------------------------------------------------------------------
+
+---------------------------- Poverty Estimation ------------------------
+                                          Poverty line: 57.7917
+                                         Headcount(HC): 72.5515
+                                      Poverty gap (PG): 27.1551
+                                     PG squared (FGT2): 13.219
+                                            Watt index: 0.396092
+------------------------------------------------------------------------
+
+   ------------- Elasticities with respect to  ----------
+    Index	              Mean consumption    Gini index
+   ------------------------------------------------------
+    Headcount(HC)        -0.941451         -0.12976
+    Poverty gap (PG)      -1.67175         0.631753
+    PG squared (FGT2)     -2.10848          1.43373
+   ------------------------------------------------------
+
+
+
+**********************************************************************************************
+**                                   Beta Lorenz curve                                      **
+**********************************************************************************************
+
+--------------- Regression result -------------
+ Ymean (Mean of dependent variable): -2.75977
+                   SST around ymean: 13.14858
+         SSE (sum of squared error): 0.01224558
+            Mean squared error: MSE: 0.001530698
+      Root mean squared error: RMSE: 0.03912413
+                      R-squared: R2: 0.9990687
+-----------------------------------------------
+      Coefficient   Standard error     t-ratio
+-----------------------------------------------
+ A     -0.469632       0.028033       -16.7531
+ B      0.948245       0.010495         90.355
+ C       0.64269      0.0084694        75.8843
+-----------------------------------------------
+
+------ The implied Beta lorenz curve ---------
+         Theta: 0.6252326
+         Gamma: 0.9482453
+         Delta: 0.6426905
+----------------------------------------------
+
+
+-------------------------------  Summary -------------------------------
+                                                  Mean: 49.8262
+   overall sum of squared error of fitted lorenz curve: 0.000155854
+      SSE of fitted lorenz curve up to headcount index: 0.000101811
+        input poverty line Z which is within the range: (11.6459, 122.91)
+                              Validity of lorenz curve: Valid
+                         Normality of poverty estimate: Normal
+------------------------------------------------------------------------
+
+------------------------- Distributional Estimation --------------------
+                                         Gini index(%): 29.922
+                         median income(or expenditure): 43.506496364659
+                                             MLD index: 0.150837
+                                 polarization index(%): -138.57
+                           distribution corrected mean: 9.44701(PPP$)
+            mean income/expenditure of the poorest 50%: 7.88488(PPP$)
+                                       estimate median: 11.7709(PPP$)
+------------------------------------------------------------------------
+
+--------------------------------------- Decile (%) -------------------------------------------
+      3.41754  4.80739  5.90166  6.98842  8.13002  9.37918  10.8118  12.5784  15.1043  22.8814
+----------------------------------------------------------------------------------------------
+
+---------------------------- Poverty Estimation ------------------------
+                                          Poverty line: 57.7917
+                                         Headcount(HC): 69.8784
+                                      Poverty gap (PG): 27.3779
+                                     PG squared (FGT2): 13.7884
+                                            Watt index: 0.394745
+------------------------------------------------------------------------
+
+   ------------- Elasticities with respect to  ----------
+    Index	              Mean consumption    Gini index
+   ------------------------------------------------------
+    Headcount(HC)        -0.957455        -0.131966
+    Poverty gap (PG)      -1.55237         0.648207
+    PG squared (FGT2)     -1.97115          1.45266
+   ------------------------------------------------------
+
+
+
+**********************************************************************************************
+**                                      Final Result                                        **
+**********************************************************************************************
+
+ Distributional estimates use GQ (Both are valid, but GQ fits better)
+ Poverty estimates use GQ (Both are valid and normal, but GQ fits better.)
+
+-------------------------------  Summary -------------------------------
+                                                  Mean: 49.8262
+   overall sum of squared error of fitted lorenz curve: 2.10631E-05
+      SSE of fitted lorenz curve up to headcount index: 3.40766E-06
+        input poverty line Z which is within the range: (16.9135, 135.828)
+                              Validity of lorenz curve: Valid
+                         Normality of poverty estimate: Normal
+------------------------------------------------------------------------
+
+------------------------- Distributional Estimation --------------------
+                                         Gini index(%): 29.4511
+                         median income(or expenditure): 43.4062082125642
+                                             MLD index: 0.145568
+                                 polarization index(%): 24.1624
+                           distribution corrected mean: -0.270555(PPP$)
+            mean income/expenditure of the poorest 50%: 8.09172(PPP$)
+                                       estimate median: 11.7437(PPP$)
+------------------------------------------------------------------------
+
+--------------------------------------- Decile (%) -------------------------------------------
+      3.49661  4.97732  6.15003  7.19031  8.19793  9.25745  10.4783  12.0695  14.6398  23.5428
+----------------------------------------------------------------------------------------------
+
+---------------------------- Poverty Estimation ------------------------
+                                          Poverty line: 57.7917
+                                         Headcount(HC): 72.5515
+                                      Poverty gap (PG): 27.1551
+                                     PG squared (FGT2): 13.219
+                                            Watt index: 0.396092
+------------------------------------------------------------------------
+
+   ------------- Elasticities with respect to  ----------
+    Index	              Mean consumption    Gini index
+   ------------------------------------------------------
+    Headcount(HC)        -0.941451         -0.12976
+    Poverty gap (PG)      -1.67175         0.631753
+    PG squared (FGT2)     -2.10848          1.43373
+   ------------------------------------------------------
+
+
+
+
