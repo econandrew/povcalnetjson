@@ -25,7 +25,7 @@ HEADERS_TYPES = [
 
 TEMPLATE_FILES = [
     "untemplate/demo/templates/empirical_modular.txt",
-    "untemplate/demo/templates/modelled_modular.txt"
+    "untemplate/demo/templates/modelled_modular_robust.txt"    
 ]
 
 FLAGS_PPP_ESTIMATED = 1

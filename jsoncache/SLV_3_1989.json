@@ -1,0 +1,186 @@
+{
+    "distribution": {
+        "index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "L": [
+            0.002017907,
+            0.02360991,
+            0.06127101,
+            0.1112308,
+            0.1745509,
+            0.2529839,
+            0.3515921,
+            0.4795321,
+            0.6537864,
+            1.0
+        ],
+        "p": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0
+        ]
+    },
+    "dist": {
+        "uses_commentary": "(Neither GQ nor Beta is invalid)",
+        "uses": "neither"
+    },
+    "elasticity": {
+        "HC": {
+            "Gini": 2.7552,
+            "meancons": -1.03322
+        },
+        "PG": {
+            "Gini": 5.50177,
+            "meancons": -0.688195
+        },
+        "FGT2": {
+            "Gini": 7.88102,
+            "meancons": -0.205423
+        }
+    },
+    "poverty": {
+        "PG": 11.2405,
+        "FGT2": 10.1935,
+        "uses": "Beta",
+        "uses_commentary": "(Both are invalid but beta is normal.)",
+        "HC": 18.9762,
+        "line_month_ppp": 57.7917,
+        "Watt": "0.0807128"
+    },
+    "beta": {
+        "reg": {
+            "RMSE": 0.008598087,
+            "ymean": -1.389714,
+            "MSE": 7.392709e-05,
+            "params": {
+                "A": {
+                    "coef": 0.5129,
+                    "se": 0.0078809,
+                    "t": 65.0816
+                }
+            },
+            "R2": 0.9996765,
+            "SSE": 0.0004435626,
+            "SST": 1.370954
+        },
+        "poverty": {
+            "HC": 18.9762,
+            "line_month_ppp": 57.7917,
+            "FGT2": 10.1935,
+            "Watt": "0.0807128",
+            "PG": 11.2405
+        },
+        "summary": {
+            "Z": {
+                "low": 0.0,
+                "high": 824.738
+            },
+            "sse": {
+                "tohc": 2.85203e-07,
+                "fitted": 3.84545e-05
+            },
+            "normality": "Normal",
+            "mean_ppp": 211.9,
+            "validity": "Invalid"
+        },
+        "elasticity": {
+            "HC": {
+                "Gini": 2.7552,
+                "meancons": -1.03322
+            },
+            "PG": {
+                "Gini": 5.50177,
+                "meancons": -0.688195
+            },
+            "FGT2": {
+                "Gini": 7.88102,
+                "meancons": -0.205423
+            }
+        },
+        "implied": {
+            "theta": 0.8937142,
+            "delta": 0.5129004,
+            "gamma": 0.9383642
+        }
+    },
+    "dataset": {
+        "country": "El Salvador",
+        "timespan": "UnDefined",
+        "year": 1989,
+        "measure": "Income",
+        "cc3": "SLV",
+        "format": "Grouped",
+        "coverage": "National",
+        "source": "SLV_N1989Y"
+    },
+    "summary": {
+        "Z": {
+            "low": -1.0,
+            "high": -1.0
+        },
+        "sse": {
+            "tohc": 2.85203e-07,
+            "fitted": -1.0
+        },
+        "normality": "Normal",
+        "mean_ppp": 211.9,
+        "validity": "Invalid"
+    },
+    "quadratic": {
+        "reg": {
+            "RMSE": 0.002547663,
+            "ymean": 0.1353793,
+            "SSE": 3.894351e-05,
+            "params": {
+                "B": {
+                    "se": 0.070839,
+                    "coef": -0.847805,
+                    "t": -11.9681
+                },
+                "C": {
+                    "coef": -0.0601964,
+                    "se": 0.014824,
+                    "t": -4.06072
+                },
+                "A": {
+                    "coef": 1.17243,
+                    "se": 0.02551,
+                    "t": 45.9597
+                }
+            },
+            "R2": 0.9994487,
+            "MSE": 6.490585e-06,
+            "SST": 0.07064075
+        },
+        "summary": {
+            "validity": "Invalid",
+            "normality": "Abnormal",
+            "Z": {
+                "low": 0.0,
+                "high": 904.062
+            },
+            "mean_ppp": 211.9,
+            "sse": {
+                "tohc": 4.94435e-06,
+                "fitted": 3.20869e-05
+            }
+        }
+    }
+}

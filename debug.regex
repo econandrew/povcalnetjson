@@ -1,0 +1,199 @@
+\
++\*+\
+\*+\ +Basic\ Information\ +\*+\
+\*+\
++\-+\ Dataset\ Information\ \-+\
+\ +Country\:\ ([^\n]+)\
+\ +Country\ dode\:\ ([^\n]+)\
+\ +Data\ Year\:\ ([0-9]+)\
+\ +Coverage\:\ ([^\n]+)\
+\ +Welfare\ measurement\:\ ([^\n]+)\
+\ +Data\ format\:\ ([^\n]+)\
+\ +Data\ source\:\ ([^\n]+)\
+\ +Data\ time\ span\:\ ([^\n]+)\
+\-+\
++\-+\ Distribution\ \-+\
+\ +i\ +P\ +L\ +\
+\-+\
+((?:(\s+)([0-9]+)(\s+)([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)(\s+)([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+)+)\-+\
++\*+\
+\*+\ +General\ Quadratic\ Lorenz\ curve\ +\*+\
+\*+\
++\-+\ Regression\ result\ \-+\
+\ Ymean\ \(Mean\ of\ dependent\ variable\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SST\ around\ ymean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SSE\ \(sum\ of\ squared\ error\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Mean\ squared\ error\:\ MSE\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Root\ mean\ squared\ error\:\ RMSE\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +R\-squared\:\ R2\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\-+\
+\ +Coefficient\ +Standard\ error\ +t\-ratio\
+\-+\
+\ A\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ B\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ C\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\-+\
++\-+\ +Summary\ \-+\
+\ +Mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +overall\ sum\ of\ squared\ error\ of\ fitted\ lorenz\ curve\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SSE\ of\ fitted\ lorenz\ curve\ up\ to\ headcount\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +input\ poverty\ line\ Z\ which\ is\ within\ the\ range\:\ \(([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\,\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\)\
+\ +Validity\ of\ lorenz\ curve\:\ ([^\s]+)\
+\ +Normality\ of\ poverty\ estimate\:\ ([^\s]+)\
+\-+\
++(?:(?:\-+\ Distributional\ Estimation\ \-+\
+\ +Gini\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +median\ income\(or\ expenditure\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +MLD\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +polarization\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+(?:(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+)|(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+))\-+\
++\-+\ Decile\ \(\%\)\ \-+\
+((?:(\s+)([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf))+)\
+\-+\
+)|(?:\-+\ Distributional\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
+(?:(?:\-+\ Poverty\ Estimation\ \-+\
+\ +Poverty\ line\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Headcount\(HC\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Watt\ index\:\ ([^\n]+)\
+\-+\
++\ +\-+\ Elasticities\ with\ respect\ to\ +\-+\
+\ +Index\	\ +Mean\ consumption\ +Gini\ index\
+\ +\-+\
+\ +Headcount\(HC\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +\-+\
+)|(?:\-+\ Poverty\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
++\*+\
+\*+\ +Beta\ Lorenz\ curve\ +\*+\
+\*+\
++\-+\ Regression\ result\ \-+\
+\ Ymean\ \(Mean\ of\ dependent\ variable\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SST\ around\ ymean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SSE\ \(sum\ of\ squared\ error\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Mean\ squared\ error\:\ MSE\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Root\ mean\ squared\ error\:\ RMSE\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +R\-squared\:\ R2\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\-+\
+\ +Coefficient\ +Standard\ error\ +t\-ratio\
+\-+\
+\ A\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ B\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ C\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\-+\
++\-+\ The\ implied\ Beta\ lorenz\ curve\ \-+\
+\ +Theta\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Gamma\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Delta\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\-+\
++\-+\ +Summary\ \-+\
+\ +Mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +overall\ sum\ of\ squared\ error\ of\ fitted\ lorenz\ curve\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SSE\ of\ fitted\ lorenz\ curve\ up\ to\ headcount\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +input\ poverty\ line\ Z\ which\ is\ within\ the\ range\:\ \(([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\,\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\)\
+\ +Validity\ of\ lorenz\ curve\:\ ([^\s]+)\
+\ +Normality\ of\ poverty\ estimate\:\ ([^\s]+)\
+\-+\
++(?:(?:\-+\ Distributional\ Estimation\ \-+\
+\ +Gini\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +median\ income\(or\ expenditure\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +MLD\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +polarization\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+(?:(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+)|(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+))\-+\
++\-+\ Decile\ \(\%\)\ \-+\
+((?:(\s+)([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf))+)\
+\-+\
+)|(?:\-+\ Distributional\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
+(?:(?:\-+\ Poverty\ Estimation\ \-+\
+\ +Poverty\ line\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Headcount\(HC\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Watt\ index\:\ ([^\n]+)\
+\-+\
++\ +\-+\ Elasticities\ with\ respect\ to\ +\-+\
+\ +Index\	\ +Mean\ consumption\ +Gini\ index\
+\ +\-+\
+\ +Headcount\(HC\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +\-+\
+)|(?:\-+\ Poverty\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
++\*+\
+\*+\ +Final\ Result\ +\*+\
+\*+\
++\ Distributional\ estimates\ use\ ([^\s]+)\ ([^\n]+)\
+\ Poverty\ estimates\ use\ ([^\s]+)\ ([^\n]+)\
++\-+\ +Summary\ \-+\
+\ +Mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +overall\ sum\ of\ squared\ error\ of\ fitted\ lorenz\ curve\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +SSE\ of\ fitted\ lorenz\ curve\ up\ to\ headcount\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +input\ poverty\ line\ Z\ which\ is\ within\ the\ range\:\ \(([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\,\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\)\
+\ +Validity\ of\ lorenz\ curve\:\ ([^\s]+)\
+\ +Normality\ of\ poverty\ estimate\:\ ([^\s]+)\
+\-+\
++(?:(?:\-+\ Distributional\ Estimation\ \-+\
+\ +Gini\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +median\ income\(or\ expenditure\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +MLD\ index\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +polarization\ index\(\%\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+(?:(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)([^\s]+)\
+)|(?:\ +distribution\ corrected\ mean\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +mean\ income\/expenditure\ of\ the\ poorest\ 50\%\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +estimate\ median\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+))\-+\
++\-+\ Decile\ \(\%\)\ \-+\
+((?:(\s+)([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf))+)\
+\-+\
+)|(?:\-+\ Distributional\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
+(?:(?:\-+\ Poverty\ Estimation\ \-+\
+\ +Poverty\ line\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Headcount\(HC\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\:\ ([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Watt\ index\:\ ([^\n]+)\
+\-+\
++\ +\-+\ Elasticities\ with\ respect\ to\ +\-+\
+\ +Index\	\ +Mean\ consumption\ +Gini\ index\
+\ +\-+\
+\ +Headcount\(HC\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +Poverty\ gap\ \(PG\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +PG\ squared\ \(FGT2\)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\ +([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?|[-+]?NaN|[-+]?Infinity|[-+]?Inf)\
+\ +\-+\
+)|(?:\-+\ Poverty\ Estimation\ \-+\
+\ +\!\!\ Not\ available\ \!\!\
+\-+\
+))\
++

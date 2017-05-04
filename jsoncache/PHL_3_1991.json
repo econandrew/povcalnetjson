@@ -1,49 +1,5 @@
 {
-    "dist": {
-        "Gini": 43.8236,
-        "uses": "GQ",
-        "mean_corrected_ppp": -0.0529849,
-        "mean_poor50_ppp": 3.02852,
-        "median_ppp": 4.80851,
-        "polarization": 39.5103,
-        "MLD": 0.319433,
-        "uses_commentary": "(Both are valid and normal, but GQ fits better.)"
-    },
-    "deciles": [
-        2.54584,
-        3.33861,
-        4.18584,
-        5.12031,
-        6.19104,
-        7.47983,
-        9.14191,
-        11.5315,
-        15.77,
-        34.695
-    ],
     "distribution": {
-        "L": [
-            0.0102692,
-            0.02411518,
-            0.04028284,
-            0.05852928,
-            0.07892312,
-            0.1014251,
-            0.1259532,
-            0.1527212,
-            0.1820578,
-            0.2141955,
-            0.2493445,
-            0.2880524,
-            0.3309608,
-            0.3790136,
-            0.433205,
-            0.4952796,
-            0.5672996,
-            0.6544446,
-            0.7681031,
-            1.0
-        ],
         "index": [
             1,
             2,
@@ -65,6 +21,28 @@
             18,
             19,
             20
+        ],
+        "L": [
+            0.0102692,
+            0.02411518,
+            0.04028284,
+            0.05852928,
+            0.07892312,
+            0.1014251,
+            0.1259532,
+            0.1527212,
+            0.1820578,
+            0.2141955,
+            0.2493445,
+            0.2880524,
+            0.3309608,
+            0.3790136,
+            0.433205,
+            0.4952796,
+            0.5672996,
+            0.6544446,
+            0.7681031,
+            1.0
         ],
         "p": [
             0.05,
@@ -89,38 +67,71 @@
             1.0
         ]
     },
+    "deciles": [
+        2.54584,
+        3.33861,
+        4.18584,
+        5.12031,
+        6.19104,
+        7.47983,
+        9.14191,
+        11.5315,
+        15.77,
+        34.695
+    ],
     "elasticity": {
-        "FGT2": {
-            "meancons": -3.92648,
-            "Gini": 9.78042
-        },
         "HC": {
-            "meancons": -1.81311,
-            "Gini": 2.38029
+            "Gini": 2.38029,
+            "meancons": -1.81311
         },
         "PG": {
             "Gini": 6.10996,
             "meancons": -2.89234
+        },
+        "FGT2": {
+            "Gini": 9.78042,
+            "meancons": -3.92648
         }
     },
+    "dist": {
+        "MLD": 0.319433,
+        "mean_corrected": -0.0529849,
+        "Gini": 43.8236,
+        "mean_corrected_is_ppp": "(PPP$)",
+        "uses_commentary": "(Both are valid, but GQ fits better)",
+        "mean_poor50": 3.02852,
+        "polarization": 39.5103,
+        "median_ppp": 90.7523903174807,
+        "median": 4.80851,
+        "uses": "GQ",
+        "median_is_ppp": "(PPP$)",
+        "mean_poor50_is_ppp": "(PPP$)"
+    },
     "dataset": {
-        "format": "Grouped",
-        "measure": "Consumption",
-        "year": 1991,
-        "source": "PHL_N1991X",
-        "cc3": "PHL",
+        "country": "Philippines",
         "timespan": "UnDefined",
+        "year": 1991,
+        "measure": "Consumption",
+        "cc3": "PHL",
+        "format": "Grouped",
         "coverage": "National",
-        "country": "Philippines"
+        "source": "PHL_N1991X"
     },
     "beta": {
-        "dist": {
-            "Gini": 43.8743,
-            "mean_corrected_ppp": 3.97486,
-            "mean_poor50_ppp": 3.02151,
-            "median_ppp": 4.91323,
-            "polarization": -125.152,
-            "MLD": 0.325632
+        "reg": {
+            "RMSE": 0.01425796,
+            "SST": 5.683497,
+            "SSE": 0.003252629,
+            "params": {
+                "A": {
+                    "coef": 0.46224,
+                    "se": 0.0067084,
+                    "t": 68.905
+                }
+            },
+            "R2": 0.9994277,
+            "MSE": 0.0002032893,
+            "ymean": -1.587882
         },
         "deciles": [
             2.43227,
@@ -134,16 +145,7 @@
             15.5091,
             34.4708
         ],
-        "implied": {
-            "delta": 0.4622398,
-            "theta": 0.7879145,
-            "gamma": 0.9963628
-        },
         "elasticity": {
-            "FGT2": {
-                "meancons": -3.57352,
-                "Gini": 9.31704
-            },
             "HC": {
                 "Gini": 2.22159,
                 "meancons": -1.69223
@@ -151,72 +153,97 @@
             "PG": {
                 "Gini": 5.80677,
                 "meancons": -2.6614
+            },
+            "FGT2": {
+                "Gini": 9.31704,
+                "meancons": -3.57352
             }
         },
+        "dist": {
+            "MLD": 0.325632,
+            "median": 4.91323,
+            "mean_corrected": 3.97486,
+            "Gini": 43.8743,
+            "mean_corrected_is_ppp": "(PPP$)",
+            "median_is_ppp": "(PPP$)",
+            "mean_poor50_is_ppp": "(PPP$)",
+            "polarization": -125.152,
+            "mean_poor50": 3.02151,
+            "median_ppp": 92.7287752268168
+        },
         "poverty": {
-            "Watt": 0.0902616,
-            "FGT2": 2.61906,
             "HC": 26.7234,
-            "PG": 7.2987,
-            "line_month_ppp": 57.7917
+            "line_month_ppp": 57.7917,
+            "FGT2": 2.61906,
+            "Watt": "0.0902616",
+            "PG": 7.2987
+        },
+        "implied": {
+            "theta": 0.7879145,
+            "delta": 0.4622398,
+            "gamma": 0.9963628
         },
         "summary": {
+            "Z": {
+                "low": 30.1607,
+                "high": 503.525
+            },
             "normality": "Normal",
+            "mean_ppp": 133.662,
+            "validity": "Valid",
             "sse": {
                 "tohc": 1.60752e-05,
                 "fitted": 0.000165161
-            },
-            "mean_ppp": 133.662,
-            "Z": {
-                "high": 503.525,
-                "low": 30.1607
-            },
-            "validity": "Valid"
-        },
-        "reg": {
-            "ymean": -1.587882,
-            "SSE": 0.003252629,
-            "RMSE": 0.01425796,
-            "SST": 5.683497,
-            "R2": 0.9994277,
-            "params": {
-                "A": {
-                    "coef": 0.46224,
-                    "t": 68.905,
-                    "se": 0.0067084
-                }
-            },
-            "MSE": 0.0002032893
+            }
         }
     },
     "poverty": {
-        "Watt": 0.0859026,
-        "FGT2": 2.30534,
-        "HC": 26.5897,
         "PG": 6.83128,
-        "line_month_ppp": 57.7917
+        "FGT2": 2.30534,
+        "uses": "GQ",
+        "uses_commentary": "(Both are valid and normal, but GQ fits better.)",
+        "HC": 26.5897,
+        "line_month_ppp": 57.7917,
+        "Watt": "0.0859026"
     },
     "summary": {
-        "normality": "Normal",
+        "Z": {
+            "low": 32.9897,
+            "high": 565.573
+        },
         "sse": {
             "tohc": 5.44104e-06,
             "fitted": 1.38911e-05
         },
+        "normality": "Normal",
         "mean_ppp": 133.662,
-        "Z": {
-            "high": 565.573,
-            "low": 32.9897
-        },
         "validity": "Valid"
     },
     "quadratic": {
-        "dist": {
-            "Gini": 43.8236,
-            "mean_corrected_ppp": 3.97845,
-            "mean_poor50_ppp": 3.02852,
-            "median_ppp": 4.80851,
-            "polarization": 39.5103,
-            "MLD": 0.319433
+        "reg": {
+            "RMSE": 0.001358748,
+            "SST": 0.1203722,
+            "SSE": 2.953915e-05,
+            "params": {
+                "B": {
+                    "se": 0.04739,
+                    "coef": -0.27661,
+                    "t": -5.83692
+                },
+                "C": {
+                    "coef": 0.394573,
+                    "se": 0.017894,
+                    "t": 22.0508
+                },
+                "A": {
+                    "coef": 0.707687,
+                    "se": 0.0079582,
+                    "t": 88.9255
+                }
+            },
+            "R2": 0.9997546,
+            "MSE": 1.846197e-06,
+            "ymean": 0.1495948
         },
         "deciles": [
             2.54584,
@@ -231,10 +258,6 @@
             34.695
         ],
         "elasticity": {
-            "FGT2": {
-                "meancons": -3.92648,
-                "Gini": 9.78042
-            },
             "HC": {
                 "Gini": 2.38029,
                 "meancons": -1.81311
@@ -242,52 +265,43 @@
             "PG": {
                 "Gini": 6.10996,
                 "meancons": -2.89234
+            },
+            "FGT2": {
+                "Gini": 9.78042,
+                "meancons": -3.92648
             }
         },
+        "dist": {
+            "MLD": 0.319433,
+            "median": 4.80851,
+            "mean_corrected": 3.97845,
+            "Gini": 43.8236,
+            "mean_corrected_is_ppp": "(PPP$)",
+            "median_is_ppp": "(PPP$)",
+            "mean_poor50_is_ppp": "(PPP$)",
+            "polarization": 39.5103,
+            "mean_poor50": 3.02852,
+            "median_ppp": 90.7523903174807
+        },
         "poverty": {
-            "Watt": 0.0859026,
-            "FGT2": 2.30534,
             "HC": 26.5897,
-            "PG": 6.83128,
-            "line_month_ppp": 57.7917
+            "line_month_ppp": 57.7917,
+            "Watt": "0.0859026",
+            "FGT2": 2.30534,
+            "PG": 6.83128
         },
         "summary": {
-            "normality": "Normal",
+            "Z": {
+                "low": 32.9897,
+                "high": 565.573
+            },
             "sse": {
                 "tohc": 5.44104e-06,
                 "fitted": 1.38911e-05
             },
+            "normality": "Normal",
             "mean_ppp": 133.662,
-            "Z": {
-                "high": 565.573,
-                "low": 32.9897
-            },
             "validity": "Valid"
-        },
-        "reg": {
-            "ymean": 0.1495948,
-            "SSE": 2.953915e-05,
-            "RMSE": 0.001358748,
-            "SST": 0.1203722,
-            "R2": 0.9997546,
-            "params": {
-                "B": {
-                    "coef": -0.27661,
-                    "t": -5.83692,
-                    "se": 0.04739
-                },
-                "A": {
-                    "coef": 0.707687,
-                    "t": 88.9255,
-                    "se": 0.0079582
-                },
-                "C": {
-                    "coef": 0.394573,
-                    "t": 22.0508,
-                    "se": 0.017894
-                }
-            },
-            "MSE": 1.846197e-06
         }
     }
 }
