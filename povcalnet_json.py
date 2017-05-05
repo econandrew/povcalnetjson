@@ -4,6 +4,7 @@ import io
 import requests
 import json
 import os.path
+import sys
 from untemplate.untemplate import untemplate_string
 
 DETAILS_URL = "http://iresearch.worldbank.org/PovcalNet/Detail.aspx"
@@ -25,7 +26,7 @@ HEADERS_TYPES = [
 
 TEMPLATE_FILES = [
     "untemplate/demo/templates/empirical_modular.txt",
-    "untemplate/demo/templates/modelled_modular_robust.txt"    
+    "untemplate/demo/templates/modelled_modular_robust.txt",    
 ]
 
 FLAGS_PPP_ESTIMATED = 1
@@ -67,6 +68,10 @@ def download_details(survey, year):
     return html[html.find(open_pre)+len(open_pre):html.find(close_pre)]
 
 if __name__ == "__main__":
+    if sys.argv[1] == "-fp":
+        force_reparse = True
+        print("Will reparse any existing text files")
+
     with open("initCItem2014.js") as f:
         js = f.read()
         
@@ -75,13 +80,21 @@ if __name__ == "__main__":
     for s in surveys:
         if not(s['flags'] & FLAGS_UNAVAILABLE):
             for year in s['years']:
-                if os.path.isfile("txtcache/{}_{}.txt".format(s['survey_id'], year)):
+                already_downloaded = os.path.isfile("txtcache/{}_{}.txt".format(s['survey_id'], year))
+                if already_downloaded and not force_reparse:
                     continue
-                print(s['survey_id'],year)
-                details = download_details(s, year)
-                details = details.replace('\r\n','\n')
-                with open("txtcache/{}_{}.txt".format(s['survey_id'], year), "w") as f_txt:
-                    f_txt.write(details) 
+                
+                print(s['survey_id'], year)    
+                
+                if not already_downloaded:
+                    details = download_details(s, year)
+                    details = details.replace('\r\n','\n')
+                    with open("txtcache/{}_{}.txt".format(s['survey_id'], year), "w") as f_txt:
+                        f_txt.write(details) 
+                else:
+                    with open("txtcache/{}_{}.txt".format(s['survey_id'], year), "r") as f_txt:
+                        details = f_txt.read()
+
                 try:
                     details_json = untemplate_string(TEMPLATE_FILES,details)
                     with open("jsoncache/{}_{}.json".format(s['survey_id'], year), "w") as f_json:
