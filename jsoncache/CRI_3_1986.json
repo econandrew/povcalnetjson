@@ -1,144 +1,15 @@
 {
-    "quadratic": {
-        "poverty": {
-            "FGT2": 3.25678,
-            "Watt": "0.0951754",
-            "HC": 12.4614,
-            "PG": 5.41364,
-            "elasticity": {
-                "HC_wrt_mean_C": -1.31326,
-                "PG_wrt_Gini": 5.86215,
-                "PG_wrt_mean_C": -1.30186,
-                "FGT2_wrt_Gini": 9.02232,
-                "FGT2_wrt_mean_C": -1.32453,
-                "HC_wrt_Gini": 2.77397
-            },
-            "line_month_ppp": 57.7917
-        },
-        "reg": {
-            "RMSE": 0.001067756,
-            "SST": 0.1275468,
-            "R2": 0.999857,
-            "params": {
-                "B": {
-                    "coef": -1.53358,
-                    "t": -94.9086,
-                    "se": 0.016158
-                },
-                "A": {
-                    "coef": 1.40938,
-                    "se": 0.016237,
-                    "t": 86.8011
-                },
-                "C": {
-                    "coef": 0.0172763,
-                    "se": 0.0081592,
-                    "t": 2.11742
-                }
-            },
-            "ymean": 0.1483501,
-            "MSE": 1.140104e-06,
-            "SSE": 1.824166e-05
-        },
-        "summary": {
-            "lorenz_validity": "Valid",
-            "sse_up_to_hcindex": 3.02117e-06,
-            "mean_month_ppp": 179.863,
-            "Z": {
-                "low": 8.03389,
-                "high": 467.161
-            },
-            "poverty_normality": "Normal",
-            "sse_fitted": 3.04149e-05
-        },
-        "dist": {
-            "polarization": 31.288,
-            "MLD": 0.255445,
-            "median_ppp": 162.089093939616,
-            "Gini": 34.424,
-            "mean_corrected_is_ppp": "(PPP$)",
-            "median": 0.471483,
-            "mean_poor50_is_ppp": "(PPP$)",
-            "median_is_ppp": "(PPP$)",
-            "mean_poor50": 0.269324,
-            "mean_corrected": 0.343083,
-            "deciles": [
-                1.53443,
-                3.67881,
-                5.37177,
-                6.86288,
-                8.29106,
-                9.76763,
-                11.4249,
-                13.4901,
-                16.5249,
-                23.0536
-            ]
-        }
-    },
-    "beta": {
-        "poverty": {
-            "FGT2": 3.17613,
-            "Watt": "0.0567245",
-            "HC": 11.8634,
-            "PG": 4.87365,
-            "elasticity": {
-                "HC_wrt_mean_C": -1.60033,
-                "PG_wrt_Gini": 6.14168,
-                "PG_wrt_mean_C": -1.4342,
-                "FGT2_wrt_Gini": 8.48241,
-                "FGT2_wrt_mean_C": -1.06893,
-                "HC_wrt_Gini": 3.38033
-            },
-            "line_month_ppp": 57.7917
-        },
-        "implied": {
-            "gamma": 0.9353188,
-            "delta": 0.7291123,
-            "theta": 0.7743913
-        },
-        "summary": {
-            "lorenz_validity": "Invalid",
-            "sse_up_to_hcindex": 1.08984e-06,
-            "mean_month_ppp": 179.863,
-            "Z": {
-                "low": 0.0,
-                "high": 455.89
-            },
-            "poverty_normality": "Normal",
-            "sse_fitted": 1.30958e-05
-        },
-        "reg": {
-            "RMSE": 0.005518314,
-            "R2": 0.9998767,
-            "SST": 3.952568,
-            "params": {
-                "B": {
-                    "coef": 0.935319,
-                    "se": 0.0025964,
-                    "t": 360.242
-                },
-                "A": {
-                    "coef": -0.255678,
-                    "se": 0.0047112,
-                    "t": -54.2705
-                },
-                "C": {
-                    "coef": 0.729112,
-                    "se": 0.0025964,
-                    "t": 280.82
-                }
-            },
-            "ymean": -1.79563,
-            "MSE": 3.045178e-05,
-            "SSE": 0.0004872285
-        }
-    },
     "dist": {
+        "mean_corrected": -0.00290879,
+        "Gini": 34.424,
         "polarization": 31.288,
-        "uses": "GQ",
-        "median": 0.471483,
+        "median_is_ppp": "(PPP$)",
+        "poverty_uses_commentary": "(Beta is invalid.)",
         "mean_poor50_is_ppp": "(PPP$)",
+        "poverty_uses": "GQ",
+        "MLD": 0.255445,
+        "mean_poor50": 0.269324,
+        "uses_commentary": "(Beta lorenz curves is invalid)",
         "deciles": [
             1.53443,
             3.67881,
@@ -151,48 +22,118 @@
             16.5249,
             23.0536
         ],
-        "MLD": 0.255445,
-        "mean_poor50": 0.269324,
-        "uses_commentary": "(Beta lorenz curves is invalid)",
+        "HC": 12.4614,
         "mean_corrected_is_ppp": "(PPP$)",
+        "median": 0.471483,
         "median_ppp": 162.089093939616,
-        "mean_corrected": -0.00290879,
-        "median_is_ppp": "(PPP$)",
-        "Gini": 34.424
-    },
-    "summary": {
-        "lorenz_validity": "Valid",
-        "sse_up_to_hcindex": 3.02117e-06,
-        "mean_month_ppp": 179.863,
-        "Z": {
-            "low": 8.03389,
-            "high": 467.161
+        "FGT2": 3.25678,
+        "Watt": "0.0951754",
+        "PG": 5.41364,
+        "elasticity": {
+            "FGT2_wrt_Gini": 9.02232,
+            "HC_wrt_Gini": 2.77397,
+            "PG_wrt_mean_C": -1.30186,
+            "FGT2_wrt_mean_C": -1.32453,
+            "PG_wrt_Gini": 5.86215,
+            "HC_wrt_mean_C": -1.31326
         },
-        "poverty_normality": "Normal",
-        "sse_fitted": 3.04149e-05
+        "uses": "GQ"
+    },
+    "beta": {
+        "reg": {
+            "ymean": -1.79563,
+            "R2": 0.9998767,
+            "SST": 3.952568,
+            "RMSE": 0.005518314,
+            "MSE": 3.045178e-05,
+            "params": {
+                "C": {
+                    "se": 0.0025964,
+                    "t": 280.82,
+                    "coef": 0.729112
+                },
+                "A": {
+                    "se": 0.0047112,
+                    "t": -54.2705,
+                    "coef": -0.255678
+                },
+                "B": {
+                    "se": 0.0025964,
+                    "t": 360.242,
+                    "coef": 0.935319
+                }
+            },
+            "SSE": 0.0004872285
+        },
+        "inputs": {
+            "line_month_ppp": 57.7917
+        },
+        "dist": {
+            "PG": 4.87365,
+            "FGT2": 3.17613,
+            "Watt": "0.0567245",
+            "elasticity": {
+                "FGT2_wrt_Gini": 8.48241,
+                "HC_wrt_mean_C": -1.60033,
+                "PG_wrt_mean_C": -1.4342,
+                "FGT2_wrt_mean_C": -1.06893,
+                "PG_wrt_Gini": 6.14168,
+                "HC_wrt_Gini": 3.38033
+            },
+            "HC": 11.8634
+        },
+        "summary": {
+            "Z": {
+                "high": 455.89,
+                "low": 0.0
+            },
+            "poverty_normality": "Normal",
+            "lorenz_validity": "Invalid",
+            "sse_fitted": 1.30958e-05,
+            "mean_month_ppp": 179.863,
+            "sse_up_to_hcindex": 1.08984e-06
+        },
+        "implied": {
+            "gamma": 0.9353188,
+            "theta": 0.7743913,
+            "delta": 0.7291123
+        }
+    },
+    "inputs": {
+        "line_month_ppp": 57.7917
+    },
+    "dataset": {
+        "coverage": "National",
+        "iso3c": "CRI",
+        "format": "Grouped",
+        "year": 1986,
+        "measure": "Income",
+        "source": "CRI_N1986Y",
+        "country": "Costa Rica",
+        "timespan": "UnDefined"
     },
     "lorenz": {
-        "L": [
-            0.005264376,
-            0.01650618,
-            0.03249571,
-            0.05290725,
-            0.0771062,
-            0.105431,
-            0.1378236,
-            0.1735608,
-            0.2134068,
-            0.2565006,
-            0.3041021,
-            0.3553599,
-            0.410504,
-            0.4701033,
-            0.5348286,
-            0.6048546,
-            0.6827233,
-            0.7690422,
-            0.8667446,
-            1.0
+        "index": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
         ],
         "p": [
             0.05,
@@ -216,54 +157,115 @@
             0.95,
             1.0
         ],
-        "index": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20
+        "L": [
+            0.005264376,
+            0.01650618,
+            0.03249571,
+            0.05290725,
+            0.0771062,
+            0.105431,
+            0.1378236,
+            0.1735608,
+            0.2134068,
+            0.2565006,
+            0.3041021,
+            0.3553599,
+            0.410504,
+            0.4701033,
+            0.5348286,
+            0.6048546,
+            0.6827233,
+            0.7690422,
+            0.8667446,
+            1.0
         ]
     },
-    "dataset": {
-        "timespan": "UnDefined",
-        "coverage": "National",
-        "measure": "Income",
-        "format": "Grouped",
-        "source": "CRI_N1986Y",
-        "country": "Costa Rica",
-        "year": 1986,
-        "iso3c": "CRI"
-    },
-    "poverty": {
-        "FGT2": 3.25678,
-        "uses": "GQ",
-        "uses_commentary": "(Beta is invalid.)",
-        "HC": 12.4614,
-        "PG": 5.41364,
-        "Watt": "0.0951754",
-        "elasticity": {
-            "HC_wrt_Gini": 2.77397,
-            "HC_wrt_mean_C": -1.31326,
-            "PG_wrt_mean_C": -1.30186,
-            "FGT2_wrt_Gini": 9.02232,
-            "FGT2_wrt_mean_C": -1.32453,
-            "PG_wrt_Gini": 5.86215
+    "summary": {
+        "Z": {
+            "high": 467.161,
+            "low": 8.03389
         },
-        "line_month_ppp": 57.7917
+        "poverty_normality": "Normal",
+        "sse_fitted": 3.04149e-05,
+        "mean_month_ppp": 179.863,
+        "lorenz_validity": "Valid",
+        "sse_up_to_hcindex": 3.02117e-06
+    },
+    "quadratic": {
+        "reg": {
+            "ymean": 0.1483501,
+            "R2": 0.999857,
+            "SST": 0.1275468,
+            "RMSE": 0.001067756,
+            "MSE": 1.140104e-06,
+            "params": {
+                "C": {
+                    "se": 0.0081592,
+                    "t": 2.11742,
+                    "coef": 0.0172763
+                },
+                "A": {
+                    "se": 0.016237,
+                    "t": 86.8011,
+                    "coef": 1.40938
+                },
+                "B": {
+                    "se": 0.016158,
+                    "t": -94.9086,
+                    "coef": -1.53358
+                }
+            },
+            "SSE": 1.824166e-05
+        },
+        "inputs": {
+            "line_month_ppp": 57.7917
+        },
+        "dist": {
+            "mean_corrected": 0.343083,
+            "Gini": 34.424,
+            "polarization": 31.288,
+            "PG": 5.41364,
+            "elasticity": {
+                "FGT2_wrt_Gini": 9.02232,
+                "HC_wrt_Gini": 2.77397,
+                "PG_wrt_mean_C": -1.30186,
+                "FGT2_wrt_mean_C": -1.32453,
+                "PG_wrt_Gini": 5.86215,
+                "HC_wrt_mean_C": -1.31326
+            },
+            "median_is_ppp": "(PPP$)",
+            "MLD": 0.255445,
+            "HC": 12.4614,
+            "mean_poor50": 0.269324,
+            "deciles": [
+                1.53443,
+                3.67881,
+                5.37177,
+                6.86288,
+                8.29106,
+                9.76763,
+                11.4249,
+                13.4901,
+                16.5249,
+                23.0536
+            ],
+            "mean_corrected_is_ppp": "(PPP$)",
+            "median": 0.471483,
+            "Watt": "0.0951754",
+            "median_ppp": 162.089093939616,
+            "mean_poor50_is_ppp": "(PPP$)",
+            "FGT2": 3.25678
+        },
+        "summary": {
+            "Z": {
+                "high": 467.161,
+                "low": 8.03389
+            },
+            "lorenz_validity": "Valid",
+            "sse_fitted": 3.04149e-05,
+            "mean_month_ppp": 179.863,
+            "sse_up_to_hcindex": 3.02117e-06,
+            "poverty_normality": "Normal"
+        }
     }
 }
