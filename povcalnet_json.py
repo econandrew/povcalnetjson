@@ -67,6 +67,28 @@ def download_details(survey, year):
     
     return html[html.find(open_pre)+len(open_pre):html.find(close_pre)]
 
+MAGIC = """
+
+**********************************************************************************************
+**                                   Basic Information                                      **
+**********************************************************************************************
+"""
+
+def has_multiple_reports(details):
+    first = details.find(MAGIC)
+    subsequent = details[first+len(MAGIC):].find(MAGIC)
+    return subsequent != -1
+    
+def split_reports(details):
+    first = details.find(MAGIC)
+    details = details[first:]                        # trim early whitespace if any
+    subsequent = details[len(MAGIC):].find(MAGIC)    # find next magic after first magic
+    while subsequent != -1:
+        yield details[:subsequent + len(MAGIC)]      # need to extend string by len magic offset in search
+        details = details[subsequent + len(MAGIC):]
+        subsequent = details[len(MAGIC):].find(MAGIC)
+    yield details
+    
 if __name__ == "__main__":
     if sys.argv[1] == "-fp":
         force_reparse = True
@@ -96,9 +118,18 @@ if __name__ == "__main__":
                         details = f_txt.read()
 
                 try:
-                    details_json = untemplate_string(TEMPLATE_FILES,details)
-                    with open("jsoncache/{}_{}.json".format(s['survey_id'], year), "w") as f_json:
-                        json.dump(details_json, f_json, indent=4)
+                    # Kind of a hack b/c it's hard to make untemplate do this
+                    if has_multiple_reports(details):
+                        print ("Contains multiple reports")
+                        for i, details in enumerate(split_reports(details)):
+                            print(" ",i)
+                            details_json = untemplate_string(TEMPLATE_FILES,details)
+                            with open("jsoncache/{}_{}_{}.json".format(s['survey_id'], year, i), "w") as f_json:
+                                json.dump(details_json, f_json, indent=4)                            
+                    else:
+                        details_json = untemplate_string(TEMPLATE_FILES,details)
+                        with open("jsoncache/{}_{}.json".format(s['survey_id'], year), "w") as f_json:
+                            json.dump(details_json, f_json, indent=4)
                 except:
                     with open("jsoncache/unparseable/{}_{}.txt".format(s['survey_id'], year), "w") as f_txt:
                         f_txt.write(details) 

@@ -1,26 +1,21 @@
 {
-    "sample": {
-        "effective_pop_wealth_is_ppp": "(PPP$)",
-        "month_min_is_ppp": "(PPP$)",
-        "effective_pop_N": 27151.0,
-        "N": 785,
-        "effective_pop_wealth": 8265720.0,
-        "month_max_is_ppp": "(PPP$)",
-        "month_min": 2.11388,
-        "month_max": 4908.43
+    "summary": {
+        "ppp": 1.18261,
+        "mean_month_ppp": 423.932,
+        "mean_month_lcu": 360.029
     },
-    "dataset": {
-        "iso3c": "BLZ",
-        "country": "Belize",
-        "timespan": "UnDefined",
-        "format": "Unit record",
-        "measure": "Consumption",
-        "source": "BLZ_N1995X",
-        "coverage": "National",
-        "year": 1995
+    "poverty": {
+        "line_month_lcu": 49.0801,
+        "line_month_ppp": 57.7917,
+        "HC": 0.122868,
+        "line_day_ppp": 1.9,
+        "PG": 0.0463639,
+        "FGT2": 0.0249882,
+        "Watt": 0.0742445
     },
     "dist": {
         "MLD": 0.648752,
+        "median_ppp": 231.467,
         "deciles": [
             0.75051,
             1.5987,
@@ -33,32 +28,9 @@
             16.825,
             44.116
         ],
-        "Gini": 0.575543,
-        "median_ppp": 231.467
+        "Gini": 0.575543
     },
     "lorenz": {
-        "index": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19
-        ],
         "L": [
             0.0027636,
             0.0075158,
@@ -80,6 +52,28 @@
             0.55933,
             0.68753,
             1.0
+        ],
+        "index": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ],
         "p": [
             0.052411,
@@ -104,18 +98,24 @@
             1.0
         ]
     },
-    "poverty": {
-        "HC": 0.122868,
-        "line_month_ppp": 57.7917,
-        "PG": 0.0463639,
-        "FGT2": 0.0249882,
-        "Watt": 0.0742445,
-        "line_day_ppp": 1.9,
-        "line_month_lcu": 49.0801
+    "sample": {
+        "month_min_is_ppp": "(PPP$)",
+        "effective_pop_wealth": 8265720.0,
+        "N": 785,
+        "effective_pop_wealth_is_ppp": "(PPP$)",
+        "month_max": 4908.43,
+        "effective_pop_N": 27151.0,
+        "month_min": 2.11388,
+        "month_max_is_ppp": "(PPP$)"
     },
-    "summary": {
-        "mean_month_ppp": 423.932,
-        "ppp": 1.18261,
-        "mean_month_lcu": 360.029
+    "dataset": {
+        "coverage": "National",
+        "country": "Belize",
+        "timespan": "UnDefined",
+        "source": "BLZ_N1995X",
+        "iso3c": "BLZ",
+        "format": "Unit record",
+        "year": 1995,
+        "measure": "Consumption"
     }
 }

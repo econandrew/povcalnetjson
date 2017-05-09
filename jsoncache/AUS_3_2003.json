@@ -1,26 +1,21 @@
 {
-    "sample": {
-        "effective_pop_wealth_is_ppp": "(PPP$)",
-        "month_min_is_ppp": "(PPP$)",
-        "effective_pop_N": 100.001,
-        "N": 299,
-        "effective_pop_wealth": 95823.4,
-        "month_max_is_ppp": "(PPP$)",
-        "month_min": -509.063,
-        "month_max": 6525.49
+    "summary": {
+        "ppp": 1.52664,
+        "mean_month_ppp": 1204.26,
+        "mean_month_lcu": 1462.86
     },
-    "dataset": {
-        "iso3c": "AUS",
-        "country": "Australia",
-        "timespan": "UnDefined",
-        "format": "Unit record",
-        "measure": "Income",
-        "source": "AUS_N2003Y",
-        "coverage": "National",
-        "year": 2003
+    "poverty": {
+        "line_month_lcu": 70.2022,
+        "line_month_ppp": 57.7917,
+        "HC": 0.0135699,
+        "line_day_ppp": 1.9,
+        "PG": 0.0497662,
+        "FGT2": 0.507389,
+        "Watt": 0.00507353
     },
     "dist": {
         "MLD": 0.247862,
+        "median_ppp": 981.724,
         "deciles": [
             2.3893,
             4.6409,
@@ -33,32 +28,9 @@
             15.878,
             25.231
         ],
-        "Gini": 0.340083,
-        "median_ppp": 981.724
+        "Gini": 0.340083
     },
     "lorenz": {
-        "index": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19
-        ],
         "L": [
             0.0063572,
             0.02404,
@@ -80,6 +52,28 @@
             0.74785,
             0.84752,
             1.0
+        ],
+        "index": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ],
         "p": [
             0.05024,
@@ -104,18 +98,24 @@
             1.0
         ]
     },
-    "poverty": {
-        "HC": 0.0135699,
-        "line_month_ppp": 57.7917,
-        "PG": 0.0497662,
-        "FGT2": 0.507389,
-        "Watt": 0.00507353,
-        "line_day_ppp": 1.9,
-        "line_month_lcu": 70.2022
+    "sample": {
+        "month_min_is_ppp": "(PPP$)",
+        "effective_pop_wealth": 95823.4,
+        "N": 299,
+        "effective_pop_wealth_is_ppp": "(PPP$)",
+        "month_max": 6525.49,
+        "effective_pop_N": 100.001,
+        "month_min": -509.063,
+        "month_max_is_ppp": "(PPP$)"
     },
-    "summary": {
-        "mean_month_ppp": 1204.26,
-        "ppp": 1.52664,
-        "mean_month_lcu": 1462.86
+    "dataset": {
+        "coverage": "National",
+        "country": "Australia",
+        "timespan": "UnDefined",
+        "source": "AUS_N2003Y",
+        "iso3c": "AUS",
+        "format": "Unit record",
+        "year": 2003,
+        "measure": "Income"
     }
 }
