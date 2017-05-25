@@ -1,27 +1,37 @@
 {
-    "sample": {
-        "month_min": 28.6844,
-        "month_min_is_ppp": "",
-        "month_max": 3009.07,
-        "mean_month_lcu": 273.329,
-        "mean_month_ppp": 248.562,
-        "effective_pop_wealth_is_ppp": "",
-        "effective_pop_wealth": 2327980.0,
-        "effective_pop_N": 9988.64,
-        "month_max_is_ppp": "",
-        "N": 541
-    },
     "dataset": {
-        "coverage": "National",
-        "iso3c": "TUV",
-        "timespan": "UnDefined",
-        "year": 2010,
-        "measure": "Consumption",
         "source": "TUV_N2010X",
+        "timespan": "UnDefined",
+        "coverage": "National",
+        "year": 2010,
+        "iso3c": "TUV",
+        "format": "Unit record",
         "country": "Tuvalu",
-        "format": "Unit record"
+        "measure": "Consumption"
     },
     "lorenz": {
+        "L": [
+            0.011026,
+            0.026451,
+            0.044653,
+            0.063224,
+            0.084893,
+            0.11001,
+            0.13469,
+            0.16321,
+            0.19402,
+            0.22796,
+            0.26749,
+            0.30618,
+            0.35064,
+            0.40057,
+            0.45778,
+            0.51946,
+            0.59509,
+            0.68693,
+            0.79917,
+            1.0
+        ],
         "index": [
             0,
             1,
@@ -65,33 +75,9 @@
             0.9018,
             0.95129,
             1.0
-        ],
-        "L": [
-            0.011026,
-            0.026451,
-            0.044653,
-            0.063224,
-            0.084893,
-            0.11001,
-            0.13469,
-            0.16321,
-            0.19402,
-            0.22796,
-            0.26749,
-            0.30618,
-            0.35064,
-            0.40057,
-            0.45778,
-            0.51946,
-            0.59509,
-            0.68693,
-            0.79917,
-            1.0
         ]
     },
     "dist": {
-        "Gini": 0.410976,
-        "FGT2": 0.00178664,
         "deciles": [
             2.5618,
             3.7164,
@@ -104,16 +90,30 @@
             16.517,
             31.638
         ],
+        "Gini": 0.410976,
+        "Watt": 0.0069609,
+        "MLD": 0.278666,
+        "FGT2": 0.00178664,
         "PG": 0.00578856,
         "HC": 0.0265786,
-        "median_ppp": 180.34,
-        "MLD": 0.278666,
-        "Watt": 0.0069609
+        "median_ppp": 180.34
+    },
+    "sample": {
+        "mean_month_lcu": 273.329,
+        "effective_pop_wealth": 2327980.0,
+        "month_min": 28.6844,
+        "mean_month_ppp": 248.562,
+        "month_max": 3009.07,
+        "month_max_is_ppp": "",
+        "month_min_is_ppp": "",
+        "N": 541,
+        "effective_pop_wealth_is_ppp": "",
+        "effective_pop_N": 9988.64
     },
     "inputs": {
         "line_month_lcu": 63.5501,
         "line_day_ppp": 1.9,
-        "line_month_ppp": 57.7917,
-        "ppp": 1.17277
+        "ppp": 1.17277,
+        "line_month_ppp": 57.7917
     }
 }

@@ -1,27 +1,37 @@
 {
-    "sample": {
-        "month_min": 6.99799,
-        "month_min_is_ppp": "(PPP$)",
-        "month_max": 7505.87,
-        "mean_month_lcu": 2070.03,
-        "mean_month_ppp": 584.29,
-        "effective_pop_wealth_is_ppp": "(PPP$)",
-        "effective_pop_wealth": 262.187,
-        "effective_pop_N": 0.999983,
-        "month_max_is_ppp": "(PPP$)",
-        "N": 813
-    },
     "dataset": {
-        "coverage": "National",
-        "iso3c": "SYC",
-        "timespan": "UnDefined",
-        "year": 1999,
-        "measure": "Consumption",
         "source": "SYC_N1999X",
+        "timespan": "UnDefined",
+        "coverage": "National",
+        "year": 1999,
+        "iso3c": "SYC",
+        "format": "Unit record",
         "country": "Seychelles",
-        "format": "Unit record"
+        "measure": "Consumption"
     },
     "lorenz": {
+        "L": [
+            0.0079351,
+            0.021434,
+            0.038184,
+            0.057424,
+            0.078522,
+            0.10287,
+            0.12943,
+            0.1584,
+            0.19009,
+            0.22411,
+            0.26189,
+            0.30277,
+            0.34805,
+            0.39659,
+            0.45089,
+            0.512,
+            0.58101,
+            0.66028,
+            0.75837,
+            1.0
+        ],
         "index": [
             0,
             1,
@@ -65,33 +75,9 @@
             0.90021,
             0.95026,
             1.0
-        ],
-        "L": [
-            0.0079351,
-            0.021434,
-            0.038184,
-            0.057424,
-            0.078522,
-            0.10287,
-            0.12943,
-            0.1584,
-            0.19009,
-            0.22411,
-            0.26189,
-            0.30277,
-            0.34805,
-            0.39659,
-            0.45089,
-            0.512,
-            0.58101,
-            0.66028,
-            0.75837,
-            1.0
         ]
     },
     "dist": {
-        "Gini": 0.427767,
-        "FGT2": 0.000305956,
         "deciles": [
             2.1248,
             3.5755,
@@ -104,16 +90,30 @@
             14.846,
             34.006
         ],
+        "Gini": 0.427767,
+        "Watt": 0.0013159,
+        "MLD": 0.319693,
+        "FGT2": 0.000305956,
         "PG": 0.00105637,
         "HC": 0.0057629,
-        "median_ppp": 422.06,
-        "MLD": 0.319693,
-        "Watt": 0.0013159
+        "median_ppp": 422.06
+    },
+    "sample": {
+        "mean_month_lcu": 2070.03,
+        "effective_pop_wealth": 262.187,
+        "month_min": 6.99799,
+        "mean_month_ppp": 584.29,
+        "month_max": 7505.87,
+        "month_max_is_ppp": "(PPP$)",
+        "month_min_is_ppp": "(PPP$)",
+        "N": 813,
+        "effective_pop_wealth_is_ppp": "(PPP$)",
+        "effective_pop_N": 0.999983
     },
     "inputs": {
         "line_month_lcu": 204.745,
         "line_day_ppp": 1.9,
-        "line_month_ppp": 57.7917,
-        "ppp": 7.89513
+        "ppp": 7.89513,
+        "line_month_ppp": 57.7917
     }
 }

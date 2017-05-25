@@ -1,27 +1,37 @@
 {
-    "sample": {
-        "month_min": -241.724,
-        "month_min_is_ppp": "(PPP$)",
-        "month_max": 12183.0,
-        "mean_month_lcu": 2447.04,
-        "mean_month_ppp": 1655.85,
-        "effective_pop_wealth_is_ppp": "(PPP$)",
-        "effective_pop_wealth": 160297.0,
-        "effective_pop_N": 100.005,
-        "month_max_is_ppp": "(PPP$)",
-        "N": 300
-    },
     "dataset": {
-        "coverage": "National",
-        "iso3c": "AUS",
-        "timespan": "UnDefined",
-        "year": 2010,
-        "measure": "Income",
         "source": "AUS_N2010Y",
+        "timespan": "UnDefined",
+        "coverage": "National",
+        "year": 2010,
+        "iso3c": "AUS",
+        "format": "Unit record",
         "country": "Australia",
-        "format": "Unit record"
+        "measure": "Income"
     },
     "lorenz": {
+        "L": [
+            0.0094613,
+            0.025859,
+            0.047388,
+            0.07095,
+            0.099188,
+            0.12572,
+            0.15639,
+            0.18928,
+            0.22486,
+            0.26342,
+            0.30545,
+            0.35069,
+            0.39996,
+            0.45396,
+            0.51316,
+            0.57872,
+            0.65164,
+            0.73493,
+            0.83541,
+            1.0
+        ],
         "index": [
             0,
             1,
@@ -65,33 +75,9 @@
             0.90012,
             0.95015,
             1.0
-        ],
-        "L": [
-            0.0094613,
-            0.025859,
-            0.047388,
-            0.07095,
-            0.099188,
-            0.12572,
-            0.15639,
-            0.18928,
-            0.22486,
-            0.26342,
-            0.30545,
-            0.35069,
-            0.39996,
-            0.45396,
-            0.51316,
-            0.57872,
-            0.65164,
-            0.73493,
-            0.83541,
-            1.0
         ]
     },
     "dist": {
-        "Gini": 0.349363,
-        "FGT2": 0.130533,
         "deciles": [
             2.5812,
             4.5119,
@@ -104,16 +90,30 @@
             15.629,
             26.526
         ],
+        "Gini": 0.349363,
+        "Watt": 0.00217587,
+        "MLD": 0.237684,
+        "FGT2": 0.130533,
         "PG": 0.0257314,
         "HC": 0.00670966,
-        "median_ppp": 1329.87,
-        "MLD": 0.237684,
-        "Watt": 0.00217587
+        "median_ppp": 1329.87
+    },
+    "sample": {
+        "mean_month_lcu": 2447.04,
+        "effective_pop_wealth": 160297.0,
+        "month_min": -241.724,
+        "mean_month_ppp": 1655.85,
+        "month_max": 12183.0,
+        "month_max_is_ppp": "(PPP$)",
+        "month_min_is_ppp": "(PPP$)",
+        "N": 300,
+        "effective_pop_wealth_is_ppp": "(PPP$)",
+        "effective_pop_N": 100.005
     },
     "inputs": {
         "line_month_lcu": 85.4055,
         "line_day_ppp": 1.9,
-        "line_month_ppp": 57.7917,
-        "ppp": 1.52664
+        "ppp": 1.52664,
+        "line_month_ppp": 57.7917
     }
 }

@@ -1,27 +1,37 @@
 {
-    "sample": {
-        "month_min": -82.4166,
-        "month_min_is_ppp": "(PPP$)",
-        "month_max": 2767.09,
-        "mean_month_lcu": 674.967,
-        "mean_month_ppp": 1271.74,
-        "effective_pop_wealth_is_ppp": "(PPP$)",
-        "effective_pop_wealth": 52546.8,
-        "effective_pop_N": 100.006,
-        "month_max_is_ppp": "(PPP$)",
-        "N": 300
-    },
     "dataset": {
-        "coverage": "National",
-        "iso3c": "CAN",
-        "timespan": "UnDefined",
-        "year": 1981,
-        "measure": "Income",
         "source": "CAN_N1981Y",
+        "timespan": "UnDefined",
+        "coverage": "National",
+        "year": 1981,
+        "iso3c": "CAN",
+        "format": "Unit record",
         "country": "Canada",
-        "format": "Unit record"
+        "measure": "Income"
     },
     "lorenz": {
+        "L": [
+            0.0084066,
+            0.025207,
+            0.04651,
+            0.07142,
+            0.099495,
+            0.13029,
+            0.1634,
+            0.19837,
+            0.23654,
+            0.27751,
+            0.32144,
+            0.3683,
+            0.42244,
+            0.4743,
+            0.53433,
+            0.60005,
+            0.679,
+            0.75684,
+            0.85535,
+            1.0
+        ],
         "index": [
             0,
             1,
@@ -65,33 +75,9 @@
             0.90011,
             0.95004,
             1.0
-        ],
-        "L": [
-            0.0084066,
-            0.025207,
-            0.04651,
-            0.07142,
-            0.099495,
-            0.13029,
-            0.1634,
-            0.19837,
-            0.23654,
-            0.27751,
-            0.32144,
-            0.3683,
-            0.42244,
-            0.4743,
-            0.53433,
-            0.60005,
-            0.679,
-            0.75684,
-            0.85535,
-            1.0
         ]
     },
     "dist": {
-        "Gini": 0.326036,
-        "FGT2": 0.0767864,
         "deciles": [
             2.5199,
             4.6207,
@@ -104,16 +90,30 @@
             15.662,
             24.333
         ],
+        "Gini": 0.326036,
+        "Watt": 0.00112512,
+        "MLD": 0.20443,
+        "FGT2": 0.0767864,
         "PG": 0.0181178,
         "HC": 0.00680959,
-        "median_ppp": 1075.97,
-        "MLD": 0.20443,
-        "Watt": 0.00112512
+        "median_ppp": 1075.97
+    },
+    "sample": {
+        "mean_month_lcu": 674.967,
+        "effective_pop_wealth": 52546.8,
+        "month_min": -82.4166,
+        "mean_month_ppp": 1271.74,
+        "month_max": 2767.09,
+        "month_max_is_ppp": "(PPP$)",
+        "month_min_is_ppp": "(PPP$)",
+        "N": 300,
+        "effective_pop_wealth_is_ppp": "(PPP$)",
+        "effective_pop_N": 100.006
     },
     "inputs": {
         "line_month_lcu": 30.6726,
         "line_day_ppp": 1.9,
-        "line_month_ppp": 57.7917,
-        "ppp": 1.28458
+        "ppp": 1.28458,
+        "line_month_ppp": 57.7917
     }
 }
